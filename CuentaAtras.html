@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+<script>
+//Variable inicial de la cuenta
+
+	function iniciar(){   
+	
+	var	cuenta = 10;
+	var intervalo =	setInterval(function(){
+    	if (cuenta >= 0){
+			document.getElementById("micuenta").innerHTML=cuenta;
+			cuenta--; 
+    	}else clearInterval(intervalo);
+    },1000);
+ } 	  
+</script>
+</head>
+    
+<body>
+
+        <input type="button" id="empezar" onclick=iniciar() value="ok">
+        <div id="micuenta"></div>
+
+    
+</body>
+</html>

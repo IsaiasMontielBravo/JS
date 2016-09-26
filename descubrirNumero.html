@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+<script>
+//Variable inicial de la cuenta
+function iniciar(){
+var cuenta=10;
+    
+var intervalo = setInterval(function(){
+    //mientras que cuenta sea mayor que 0
+    if (cuenta>0){
+        cuenta--; //decrementa
+       //cambia el texto de capa micuenta
+document.getElementById("micuenta").innerHTML=cuenta;
+    }else clearInterval(intervalo);
+
+    },1000);
+}
+
+function aleatorio(){
+    var aleatorio= math.floor((math.random()*10)+1);
+
+    if (aleatorio==numeroElegido){
+        document.getElementById("numeroElegido").value)
+    }else{
+
+    }
+}
+    
+</script>
+
+
+</head>
+    
+<body>
+      <input type="button" id="ok" onclick=iniciar() value="Empezar">
+       <div id="micuenta">10</div>
+
+        Tu numero: <input type="number" onclick=iniciar() name="numeroElegido"><br>
+        <input type="submit" value="Check">
+
+        
+
+    
+</body>
+</html>
